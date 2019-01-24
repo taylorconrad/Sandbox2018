@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Three Subject Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- This is an internal style block of code to override some of the bootstrap style values-->
+    <style type="text/css">
+    .navbar .nav > li > a {
+        color: #84B1DB; /*nav color*/
+        text-shadow: none;
+    }
+    .navbar .nav > li > a:hover {
+        color:white;
+        background: #A2A2A2;
+    }
+    .myclass {
+        color: #FF0000;
+        background-color:  #99ffcc;
+    }
+    .row1Styles {
+        background-color: #fcc7b5; 
+        min-height: 200px;
+    }
+    .row2Styles {
+        background-color: lavender; 
+        min-height: 200px;
+    }
+    .col1Styles {
+        background-color: #f99286; 
+        height: 180px;
+        border-width: 2px; border-color: black; border-style: solid;
+    }
+    .col2Styles {
+        background-color: gray; 
+        height: 180px;
+        border-width: 2px; border-color: black; border-style: solid;
+        margin-left: 80px;
+    }
+    </style>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--  The container class from bootstrap is a width of 1000 pixels. 
+  It has all the padding other values to help make the content look its best in many different browsers.-->
+  <div class="container">
+    <!--  navbar class has many types, this is the first one you can use. we will explore other in class or video lesson-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://seattleacademy.org/">Seattle Academy</a>
+            <ul class="nav navbar-nav">
+
+                <li><a href="../index.html">Main page</a></li>
+                <li><a href="lesson3.html">Third page</a></li>
+                <li class="active"><a href="lesson4.html">Fourth page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--     An example of the many classes (another identification element) that are inside the bootstrap library-->
+    <div class="alert alert-success">
+        This site is under development!
+    </div>
+    <h1>Typical header</h1>
+    <!--  You can do columns by putting spans inside of rows. -->
+    <div class="row">
+        <div class="col-sm-3">
+            <p>This is our first span3 div (300 px width) in our row. This span has many values (like padding and margins) to make the text look good inside. </p>
+        </div>
+        <div class="col-sm-9 myclass">
+            <p>This is our first span9 div (900 px width) in our row. <br>
+                It is very important to remember how many pixels you have in the outside divs like container to be sure these divs will fit in a single row.</p>
+            </div>
+
+        </div>
+        <div class="row row1Styles">
+            <div class="col-sm-6 col1Styles">
+                <p>Put slideshow here</p>
+            </div>  <!-- closing column -->
+            <div class="col-sm-5 col2Styles">
+                <p>Put model button here</p>
+                <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            </div> <!-- closing column -->
+        </div>  <!-- closing row -->
+
+        <div class="row row2Styles">
+            <div class="col-sm-6 col1Styles">
+                <p>Find any other bootstrap feature and paste it here</p>
+            </div>  <!-- closing column -->
+            <div class="col-sm-5 col2Styles">
+                <p>Find any other bootstrap feature and paste it here</p>
+            </div>  <!-- closing column -->
+        </div>  <!-- closing row -->
+        <p>This is our first span9 div (900 px width) in our row. <br>
+            It is very important to remember how many pixels you have in the outside divs like container to be sure these divs will fit in a single row.</p>
+        </div>
+
+    </div> <!-- closing container -->
+</body>
+</html>
